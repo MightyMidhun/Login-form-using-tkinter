@@ -1,12 +1,14 @@
-from tkinter import *
-from tkinter import messagebox
+from tkinter import * #to import the tkinter module
+from tkinter import messagebox 
+
+
+# This to clear all the values enter by the user
 
 def clear():
   t1.delete(0,10)
   t2.delete(0,10)
 
-
-  
+# This to function after user clicking the submmitbutton.
 
 def login():
       a=(t1.get())
@@ -21,8 +23,8 @@ def login():
       else :
             messagebox.showerror("Error", "Username is wrong")
 
-
-
+          
+          
 top=Tk()
 
 l1=Label(top,text="Enter the username :").grid(row=0,column=0)
